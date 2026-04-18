@@ -96,7 +96,7 @@ This single command:
 
 ---
 
-###  — Train only
+### Step 2 — Train only
 
 ```bash
 python train.py
@@ -111,15 +111,13 @@ Outputs:
 
 ---
 
-### Option C — Evaluate only (after training)
+### Step 3 — Evaluate only (after training)
 
 ```bash
 python evaluate.py
 ```
 
 Requires `unet_cylinder.keras` and the `.npy` arrays saved by `train.py`.
-
-Prints a report like:
 
 ```
 ───────────────────────────────────────────────────
@@ -136,7 +134,7 @@ Prints a report like:
 
 ---
 
-### Option D — Regenerate plots only
+### Step 4 — Regenerate plots only
 
 ```bash
 python visualize.py
@@ -148,7 +146,7 @@ Requires `y_test.npy`, `y_pred.npy`, and `flow_stats.npy` in the output director
 
 ---
 
-### Option E — Skip training, use saved model
+### Step 5 — Skip training, use saved model
 
 ```bash
 python main.py --skip-train
