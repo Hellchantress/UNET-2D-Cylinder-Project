@@ -1,0 +1,5 @@
+numpy>=1.24
+tensorflow>=2.13
+pyvista>=0.42
+scikit-image>=0.21
+matplotlib>=3.7
