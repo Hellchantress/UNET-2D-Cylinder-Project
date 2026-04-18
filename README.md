@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 ## Running the Code
 
-### Step 1 — Full pipeline (train + evaluate + plot)
+### Option 1 — Full pipeline (train + evaluate + plot)
 
 ```bash
 python main.py
@@ -96,7 +96,7 @@ This single command:
 
 ---
 
-### Step 2 — Train only
+### Option 2 — Train only
 
 ```bash
 python train.py
@@ -111,7 +111,7 @@ Outputs:
 
 ---
 
-### Step 3 — Evaluate only (after training)
+### Option 3 — Evaluate only (after training)
 
 ```bash
 python evaluate.py
@@ -134,7 +134,7 @@ Requires `unet_cylinder.keras` and the `.npy` arrays saved by `train.py`.
 
 ---
 
-### Step 4 — Regenerate plots only
+### Option 4 — Regenerate plots only
 
 ```bash
 python visualize.py
@@ -146,7 +146,7 @@ Requires `y_test.npy`, `y_pred.npy`, and `flow_stats.npy` in the output director
 
 ---
 
-### Step 5 — Skip training, use saved model
+### Option 5 — Skip training, use saved model
 
 ```bash
 python main.py --skip-train
