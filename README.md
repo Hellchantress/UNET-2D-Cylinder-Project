@@ -35,7 +35,7 @@ unet_cylinder_wake/
 
 Download `cylinder2d.vti` from the **ETH Zürich Computer Graphics Laboratory**:
 
-- URL: [https://cgl.ethz.ch/research/fluid_simulation/data.php](https://cgl.ethz.ch/research/fluid_simulation/data.php)
+- URL: [https://cgl.ethz.ch/research/fluid_simulation/data.php](https://cgl.ethz.ch/research/visualization/data.php)
 - File: `cylinder2d.vti`
 - Place it in the **root of this repository** (same directory as `main.py`).
 
