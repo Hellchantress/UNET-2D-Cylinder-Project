@@ -1,3 +1,4 @@
+**UNET Deep Learning Architecture**
 
 ## Overview
 
@@ -81,7 +82,7 @@ pip install -r requirements.txt
 
 ## Running the Code
 
-### Option A — Full pipeline (train + evaluate + plot)
+### Step 1 — Full pipeline (train + evaluate + plot)
 
 ```bash
 python main.py
@@ -95,7 +96,7 @@ This single command:
 
 ---
 
-### Option B — Train only
+###  — Train only
 
 ```bash
 python train.py
@@ -176,7 +177,7 @@ Loads `unet_cylinder.keras`, runs evaluation and generates all plots.
 
 ---
 
-## Model Architecture
+## UNET Model Architecture
 
 ```
 Input (H, W, 2)
@@ -220,7 +221,7 @@ All tunable parameters live in `config.py`. Key settings:
 If you use this code, please cite:
 
 ```
-Chauhan K., Singh S. (2025). Deep Learning–Based Surrogate Modeling for Rapid
+Chauhan K., Singh S. (2026). Deep Learning–Based Surrogate Modeling for Rapid
 Prediction and Visualization of Unsteady Cylinder Wake Flow Using a U-Net Architecture.
 Open-SLU GSA Symposium, St. Louis, MO.
 ```
