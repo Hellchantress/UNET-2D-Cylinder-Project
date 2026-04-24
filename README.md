@@ -92,69 +92,10 @@ This single command:
 1. Loads and preprocesses `cylinder2d.vti`
 2. Trains the U-Net for 20 epochs (configurable)
 3. Evaluates on the held-out test set (MSE, SSIM, R², Lr)
-4. Saves all figures to `UNET_2D_Cylinder_plots/`
+4. Saves all figures to 
 
----
+------------------------
 
-### Option 2 — Train only
-
-```bash
-python train.py
-python train.py --epochs 40       # custom epoch count
-python train.py --resume          # continue from saved checkpoint
-```
-
-Outputs:
-- `unet_cylinder.keras` — saved model weights
-- `UNET_2D_Cylinder_plots/Loss_vs_Epoch_LogScale.png`
-- `UNET_2D_Cylinder_plots/X_test.npy`, `y_test.npy`, `flow_stats.npy`
-
----
-
-### Option 3 — Evaluate only (after training)
-
-```bash
-python evaluate.py
-```
-
-Requires `unet_cylinder.keras` and the `.npy` arrays saved by `train.py`.
-
-```
-───────────────────────────────────────────────────
-  VELOCITY FIELD METRICS
-───────────────────────────────────────────────────
-  MSE                             : 0.000312
-  Mean SSIM                       : 0.9874
-  Overall R² Accuracy (%)         : 97.82
-  Pixel Accuracy |e|<0.05 (%)     : 99.14
-  U-Velocity R² Accuracy (%)      : 98.11
-  V-Velocity R² Accuracy (%)      : 97.53
-  ...
-```
-
----
-
-### Option 4 — Regenerate plots only
-
-```bash
-python visualize.py
-# or equivalently:
-python main.py --plot-only
-```
-
-Requires `y_test.npy`, `y_pred.npy`, and `flow_stats.npy` in the output directory.
-
----
-
-### Option 5 — Skip training, use saved model
-
-```bash
-python main.py --skip-train
-```
-
-Loads `unet_cylinder.keras`, runs evaluation and generates all plots.
-
----
 
 ## Output Figures
 
